@@ -1,7 +1,7 @@
 // Haritayı başlat
 const map = L.map('loveMap').setView([39.9191711, 32.6154940], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; Akif&Ela Aşk Haritası'
+  attribution: '&copy; Akif❤️Ela Aşk Haritası'
 }).addTo(map);
 
 // Özel Marker İkonları
@@ -19,26 +19,40 @@ const markerIcons = {
 // Özel Konumlar
 const specialLocations = [
   {
-    title: "İlk Buluşma",
-    coords: [39.9528, 32.6155],
-    description: "Cezeri Lisesi - İlk tanıştığımız yer 💘",
+    title: "O An",
+    coords: [39.5928, 32.3719],
+    description: "Hangi an bilmiyorum ama 4 yıl boyunca başıma gelen en iyi şeysin 💘",
     icon: 'star'
     },
   {
-    title: "İlk Sarılma",
-    coords: [39.9191711, 32.6154940],
-    description: "Bu koordinatlarda ilk kez sarıldık 🥰",
+    title: "Önemli Bir Yer",
+    coords: [39.5844, 32.3655],
+    description: "Bil bakalım burası neresi? Tabiki de ilk kez sarıldığımız yer 🥰",
     icon: 'heart'
     },
   {
-    title: "Uzun Buluşma",
-    coords: [40.8028, 29.4306],
-    description: "Gebze Yurdu - İlk uzun buluşmamız ❤️",
+    title: "Gebze",
+    coords: [40.4721, 29.2926],
+    description: "Bur da sabaha kadar oturup sohbet etmek var ya tadından yenmez ❤️",
+    icon: 'heart'
+    },
+  {
+    title: "Kütüphane",
+    coords: [39.5836, 32.3819],
+    description: "Dersler ne kadar sıkıcı olsa da senleyken dersler bile kolaylaşıyor işte hayatı böyle kolaylaştırıyorsun 📖",
+    icon: 'heart'
+    },
+  {
+    title: "O yurt",
+    coords: [39.5617, 41.1635],
+    description: "Nasıl bir tramva anlatamam aklım çıkmıştı orda kalıcağınızı duyunca 🤯",
     icon: 'heart'
     }
+
 ];
 
-// Marker'ları ekle ve liste oluştur
+// Marker'ları ekle ve li oluştur
+const locationsList = document.getElemoluştur
 const locationsList = document.getElementById('locationsList');
 specialLocations.forEach((loc, index) => {
   // Haritaya marker ekle
