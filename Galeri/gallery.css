@@ -1,0 +1,119 @@
+/* Ana Tema */
+:root {
+  --gradient-bg: linear-gradient(45deg, #ff6b6b, #ff9ff3);
+  --box-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #2d3436;
+  --hover-effect: all 0.3s ease;
+}
+
+body {
+  background: var(--gradient-bg);
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+}
+
+/* Geri Dön Butonu */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: var(--box-bg);
+  color: var(--text-color);
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--hover-effect);
+  z-index: 1000;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Galeri Konteynırı */
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Fotoğraf Grid'i */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.photo-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: var(--hover-effect);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.photo-item:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+/* Fotoğraf Overlay */
+.photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  color: white;
+  padding: 1.5rem;
+  opacity: 0;
+  transition: var(--hover-effect);
+}
+
+.photo-item:hover .photo-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 1.2rem;
+  text-align: center;
+  transform: translateY(20px);
+  transition: var(--hover-effect);
+}
+
+.photo-item:hover .overlay-text {
+  transform: translateY(0);
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .photo-item img {
+    height: 300px;
+  }
+}
