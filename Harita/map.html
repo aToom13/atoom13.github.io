@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aşkımızın Haritası ❤️</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <!-- Üst Navigasyon Çubuğu -->
+    <nav class="map-navbar">
+        <a href="../index.html" class="back-btn">🏡  Ana Sayfa</a>
+        <div class="romantic-title">
+            <div class="heart-pulse">❤️</div>
+            <h1>Aşkımızın Haritası</h1>
+        </div>
+        <div class="locations-dropdown">
+            <button class="dropdown-btn">📍 Özel Yerlerimiz</button>
+            <div class="dropdown-content" id="locationsList"></div>
+        </div>
+    </nav>
+
+    <!-- Harita Konteynırı -->
+    <div class="map-frame">
+        <div id="loveMap"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
