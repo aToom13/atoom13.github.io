@@ -61,7 +61,7 @@ class MusicPlayer {
 
   async loadPlaylist() {
     try {
-      const response = await fetch('/Songs/list.json');
+      const response = await fetch('songs/list.json');
       this.playlist = await response.json();
       this.renderPlaylist();
       this.loadTrack(0);
