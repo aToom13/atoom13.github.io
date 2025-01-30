@@ -1,0 +1,1 @@
+Bu klasöre fotoğraflar foto1.jpg gibi isimlerle konulup gallery.js dosyasında belirtilicektir
