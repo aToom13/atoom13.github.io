@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ela & Akif - 26 Eylül 2024'ten Beri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="love-container">
+        <div class="love-header">
+            <h1>Ela ❤️ Akif</h1>
+            <div id="loveTimer"></div>
+        </div>
+        
+        <div class="interaction-buttons">
+            <button onclick="window.location.href='Harita/map.html'" class="map-btn">
+                🗺️ Aşkımızın Haritası
+            </button>
+            
+            <button onclick="window.location.href='Galeri/gallery.html'" class="gallery-btn">
+                📸 Altın Anılarımız
+            </button>
+        </div>
+
+        <div class="music-player">
+          <div class="player-controls">
+            <button id="prevBtn">⏮</button>
+            <button id="playPauseBtn">▶</button>
+            <button id="nextBtn">⏭</button>
+          </div>
+          <div class="song-info">
+            <div id="currentSong">Şarkı Seçilmedi</div>
+            <input type="range" id="progressBar" value="0">
+            <div class="time-display">
+              <span id="currentTime">0:00</span>
+              <span id="duration">0:00</span>
+            </div>
+          </div>
+          <div class="playlist" id="playlist"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
