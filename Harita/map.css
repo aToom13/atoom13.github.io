@@ -1,0 +1,167 @@
+:root {
+    --pastel-gradient: linear-gradient(135deg, #d5aaff 25%, #aff8d8 100%);
+    --nav-gradient: linear-gradient(135deg, #aff8d8, #d5aaff);
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--pastel-gradient);
+    min-height: 100vh;
+}
+
+/* Üst Navigasyon Çubuğu */
+.map-navbar {
+    background: rgba(255,255,255,0.9);
+    padding: 1rem 2rem;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+    position: relative;
+    z-index: 1000;
+}
+
+.romantic-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-family: 'Parisienne', cursive;
+    color: #e84393;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+}
+
+.romantic-title h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.heart-pulse {
+    animation: pulse 1.5s infinite;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Geri Dön Butonu */
+.back-btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--pastel-gradient);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(248, 165, 194, 0.2);
+ }
+
+.back-btn:hover {
+    transform: translateX(1.05px);
+}
+
+/* Dropdown Menü */
+.locations-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--nav-gradient);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(248, 165, 194, 0.2);
+}
+
+.dropdown-btn:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    min-width: 250px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.location-item {
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 1px solid #eee;
+    background: rgba(255,255,255,0.9);
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.location-item:last-child {
+    border-bottom: none;
+}
+
+.location-item:hover {
+    background: #ffe6f2;
+    transform: translateX(5px);
+}
+
+/* Harita Çerçevesi */
+.map-frame {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
+    height: 70vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 3px solid white;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+
+#loveMap {
+    width: 100%;
+    height: 100%;
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+    .map-navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .romantic-title {
+        position: static;
+        transform: none;
+        margin: 0.5rem 0;
+    }
+
+    .map-frame {
+        width: 95%;
+        height: 60vh;
+    }
+}
