@@ -44,7 +44,7 @@ const specialLocations = [
     },
   {
     title: "O yurt",
-    coords: [39.5617, 41.1635],
+    coords: [39.5617, 50.1635],
     description: "Nasıl bir tramva anlatamam aklım çıkmıştı orda kalıcağınızı duyunca 🤯",
     icon: 'heart'
     }
