@@ -26,7 +26,7 @@ const specialLocations = [
     },
   {
     title: "Önemli Bir Yer",
-    coords: [70.979302, 32.615463],
+    coords: [39.979302, 32.615463],
     description: "Bil bakalım burası neresi? Tabiki de ilk kez sarıldığımız yer 🥰",
     icon: 'heart'
     },
