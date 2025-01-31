@@ -52,7 +52,6 @@ const specialLocations = [
 ];
 
 // Marker'ları ekle ve li oluştur
-const locationsList = document.getElemoluştur
 const locationsList = document.getElementById('locationsList');
 specialLocations.forEach((loc, index) => {
   // Haritaya marker ekle
