@@ -32,7 +32,7 @@ const specialLocations = [
     },
   {
     title: "Gebze",
-    coords: [40.4721, 29.2926],
+    coords: [40.789500, 29.490631],
     description: "Bur da sabaha kadar oturup sohbet etmek var ya tadından yenmez ❤️",
     icon: 'heart'
     },
@@ -44,7 +44,7 @@ const specialLocations = [
     },
   {
     title: "O yurt",
-    coords: [39.5617, 50.1635],
+    coords: [39.93798, 41.27626],
     description: "Nasıl bir tramva anlatamam aklım çıkmıştı orda kalıcağınızı duyunca 🤯",
     icon: 'heart'
     }
