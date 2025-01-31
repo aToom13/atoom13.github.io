@@ -20,13 +20,13 @@ const markerIcons = {
 const specialLocations = [
   {
     title: "O An",
-    coords: [39.5928, 32.3719],
+    coords: [39.991119, 32.622279],
     description: "Hangi an bilmiyorum ama 4 yıl boyunca başıma gelen en iyi şeysin 💘",
     icon: 'star'
     },
   {
     title: "Önemli Bir Yer",
-    coords: [39.5844, 32.3655],
+    coords: [39.979302, 32.615463],
     description: "Bil bakalım burası neresi? Tabiki de ilk kez sarıldığımız yer 🥰",
     icon: 'heart'
     },
@@ -38,7 +38,7 @@ const specialLocations = [
     },
   {
     title: "Kütüphane",
-    coords: [39.5836, 32.3819],
+    coords: [39.976861, 32.638385],
     description: "Dersler ne kadar sıkıcı olsa da senleyken dersler bile kolaylaşıyor işte hayatı böyle kolaylaştırıyorsun 📖",
     icon: 'heart'
     },
