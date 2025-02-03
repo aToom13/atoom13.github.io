@@ -27,6 +27,16 @@
         <div id="loveMap"></div>
     </div>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Dizin uyumluluğu için tam yol kontrolü
+        if(!sessionStorage.getItem('loveVerified') || 
+           window.location.pathname.indexOf('index.html') > -1) {
+          window.location.href = '../index.html';
+        }
+      });
+    </script> >
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="map.js"></script>
 </body>
