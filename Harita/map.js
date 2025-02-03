@@ -1,7 +1,7 @@
 // Haritayı başlat
-const map = L.map('loveMap').setView([39.9191711, 32.6154940], 13);
+const map = L.map('loveMap').setView([39.98595, 32.62351], 15);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; Akif❤️Ela Aşk Haritası'
+  attribution: '&copy; Ela❤️Akif Aşk Haritası'
 }).addTo(map);
 
 // Özel Marker İkonları
@@ -21,7 +21,7 @@ const specialLocations = [
   {
     title: "O An",
     coords: [39.991119, 32.622279],
-    description: "Hangi an bilmiyorum ama 4 yıl boyunca başıma gelen en iyi şeysin 💘",
+    description: "Hangi an bilmiyorum ama 4 yıl boyunca başıma gelen en iyi şeysin (Aslında biliyorum her an ❤️) 💘",
     icon: 'star'
     },
   {
