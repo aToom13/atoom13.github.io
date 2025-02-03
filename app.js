@@ -104,7 +104,7 @@ function createHeartsStorm() {
 
 // Kalp Yağmuru Efekti
 function startHeartRain() {
-  const emojis = ['❤️', '💖', '💘', '💝', '💑'];
+  const emojis = ['❤️', '💖', '💘', '🥰', '🎃', '😘'];
   setInterval(() => {
     const heart = document.createElement('div');
     heart.className = 'falling-heart';
