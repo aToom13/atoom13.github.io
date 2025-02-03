@@ -23,9 +23,9 @@ function checkLove() {
 
     // Hoş geldin mesajı
     Swal.fire({
-      title: `Hoş geldin aşkım! ${getRomanticEmoji()}`,
-      html: '<div class="custom-swal">❤️ Seninle her an özel... ❤️</div>',
-      timer: 2000,
+      title: `Hoş geldin sevgilimmm! ${getRomanticEmoji()}`,
+      html: '<div class="custom-swal">❤️ Dünyanın enn iyi sevgilisine küçücük bir hediye ❤️</div>',
+      timer: 10000,
       background: '#ffe6ee',
       showConfirmButton: false
     });
@@ -84,7 +84,7 @@ function updateTimer() {
 // Kalp Fırtınası Efekti
 function createHeartsStorm() {
   const heartEmojis = ['❤️', '💖', '💘', '💕', '💓'];
-  const stormDuration = 3000; // 3 saniye
+  const stormDuration = 2000; // 3 saniye
 
   for (let i = 0; i < 50; i++) {
     setTimeout(() => {
@@ -114,16 +114,16 @@ function startHeartRain() {
     document.body.appendChild(heart);
 
     setTimeout(() => heart.remove(), 5000);
-  }, 300);
+  }, 500);
 }
 
 // Selamlama Mesajı
 function updateGreeting() {
   const hour = new Date().getHours();
   const messages = {
-    morning: '🌞 Günaydın Bir Tanem',
-    afternoon: '☀️ İyi Günler Canımın İçi',
-    evening: '🌙 İyi Akşamlar Kalbimin Sahibi',
+    morning: '🌞 Günaydınn bir tanemmm ❤️',
+    afternoon: '☀️ Bu gün nasılsınn aşkımmm ❤️',
+    evening: '🌙 İyi akşamlarr sevgilimmm ❤️',
   };
 
   const greeting =
@@ -140,17 +140,18 @@ function updateGreeting() {
 // Günlük Aşk Sözü
 function getDailyLoveQuote() {
   const quotes = [
-    'Sen benim her şeyimsin...',
-    'Aşkımız sonsuza kadar böyle devam etsin ❤️',
-    'Seninle geçen her saniye bir hazine',
-    'Kalbinin sesi benim için en güzel melodi 🎶',
+    'Seni çookkk seviyorummm herşeyimm ❤️',
+    'Nerdeysen orası benim cennetimm ❤️',
+    'Dünyanın en güzel kızı...',
+    'Sen benim başıma gelen en güzel şeysinnn 😘',
+    'İyi ki varsınnn sevgilimmm ❤️'
   ];
   return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
 // Romantik Emoji Seçimi
 function getRomanticEmoji() {
-  const emojis = ['💖', '🌹', '🎃', '🌸', '💑'];
+  const emojis = ['💖', '🌹', '🎃', '❤️', '😘'];
   return emojis[Math.floor(Math.random() * emojis.length)];
 }
 
@@ -162,9 +163,9 @@ function showErrorAnimation() {
 
   Swal.fire({
     icon: 'error',
-    title: 'Oh hayır!',
-    html: `<p>Sanırım aşkımızın şifresini unuttun 😢</p>
-          <p><i>"İlk kez ne zaman el ele tutuştuk?"</i></p>`,
+    title: 'Nassı yaaaa',
+    html: `<p>Sen kim olduğunu bilmiyor musunn 😂</p>
+          <p><i>"Kül kedisi sana neyi hatırlatıyorrr 🎃"</i></p>`,
     confirmButtonText: 'Tekrar Deneyeyim ❤️',
     background: '#fff0f3',
     confirmButtonColor: '#e84393',
