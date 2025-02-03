@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'foto10.jpg',
         'foto11.jpg',
         'foto12.jpg',
+        'foto13.jpg',
+        'foto14.jpg',
+        'foto15.jpg',
+
     ];
 
   const photoGrid = document.getElementById('photoGrid');
@@ -28,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
         "Teşekkürlerrr",
         "Beraber yenilerini eklemeye", 
         "Ne dersinn sevgilimm ❤️",
+        "Seniii",
+        "Çoooookkkkkkk",
+        "Seviyorummmm 😘❤️",
     ];
 
   images.forEach((img, index) => {
