@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'foto9.jpg',
         'foto10.jpg',
         'foto11.jpg',
-        'foto12.jpg'
+        'foto12.jpg',
     ];
 
   const photoGrid = document.getElementById('photoGrid');
