@@ -6,9 +6,9 @@ if (notes.length === 0) {
     notes.push(
         { text: 'İlk Buluşmamız ❤️', date: new Date().toLocaleString('tr-TR'), completed: false },
         { text: 'İlk Sinema Keyfimiz 🎥', date: new Date().toLocaleString('tr-TR'), completed: false },
-        { text: 'İlk Deniz Kenarı Yürüyüşümüz 🌊', date: new Date().toLocaleString('tr-TR'), completed: false },
-        { text: 'İlk Kahvaltı Keyfimiz 🍳', date: new Date().toLocaleString('tr-TR'), completed: false },
-        { text: 'İlk Şarkımız 🎶', date: new Date().toLocaleString('tr-TR'), completed: false }
+        { text: 'İlk Sarılmamız 👩‍❤️‍👨', date: new Date().toLocaleString('tr-TR'), completed: false },
+        { text: 'İlklerimin seninle olmasını istiyorummm prensesimm ⬇️', date: new Date().toLocaleString('tr-TR'), completed: true },
+        { text: 'Bu yolda bana eşlik eder misinn', date: new Date().toLocaleString('tr-TR'), completed: true }
     );
     saveNotes();
 }
@@ -31,8 +31,8 @@ function addNote() {
         input.value = '';
         Swal.fire({
             icon: 'success',
-            title: 'Anımız Kaydedildi! 💌',
-            text: 'Bu güzel anı sonsuza kadar saklayacağız...',
+            title: 'İşte yeni bir anı dahaa 🥰',
+            text: 'Sonsuzluğa giden güzel bir anı dahaaa ❤️',
             timer: 2000,
             background: '#ffe6ee'
         });
