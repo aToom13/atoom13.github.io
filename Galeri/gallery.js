@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const captions = [
         "Bunların hepsine",
         "Başlık atmam lazım",
-        "Ama",
-        "Atamam sevgilimm",
+        "Ama atamam sevgilimm",
         "Çünkü bu anılar",
         "Bir kaç",
         "İle anlatılamicak",
@@ -27,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "Bu anılarda",
         "Bana eşlik ettiğin için",
         "Teşekkürlerrr",
-        "Yenilerini eklemeye ne dersinn sevgilimm ❤️"
+        "Beraber yenilerini eklemeye", 
+        "Ne dersinn sevgilimm ❤️",
     ];
 
   images.forEach((img, index) => {
