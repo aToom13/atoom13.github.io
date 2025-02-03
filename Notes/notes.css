@@ -1,0 +1,192 @@
+:root {
+    --akif-green: #2ecc71;
+    --ela-blue: #3498db;
+    --pumpkin-orange: #e67e22;
+    --love-pink: #e84393;
+    --passion-red: #e74c3c;
+    
+    --golden: #FFD700;
+    --rose-gold: #B76E79;
+    --ivory: #FFFFF0;
+    --velvet: #800020;
+    --deep-space: #2C3E50;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: linear-gradient(135deg, var(--velvet), var(--deep-space));
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  min-height: 25vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.notes-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.home-btn, .recycle-bin-btn {
+    background: var(--rose-gold);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+    margin-left: 1rem;
+}
+
+.recycle-bin-btn {
+    background: var(--rose-gold);
+}
+
+.home-btn:hover, .recycle-bin-btn:hover {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.notes-input {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.notes-input input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid var(--love-pink);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.notes-input button {
+    background: var(--love-pink);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.notes-input button:hover {
+    transform: scale(1.05);
+}
+
+.note-item {
+    background: linear-gradient(45deg, #ff9ff3, #feca57);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideIn 0.5s ease;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.deleted-note {
+    background: rgba(231, 76, 60, 0.1) !important;
+    border: 2px dashed var(--passion-red);
+}
+
+.note-item.completed {
+    background: linear-gradient(45deg, rgba(189, 195, 199, 0.7), rgba(44, 62, 80, 0.7)) !important;
+}
+
+.note-item.completed span {
+    text-decoration: line-through;
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+.note-actions {
+    display: flex;
+    gap: 8px;
+    opacity: 1;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.note-item:hover .note-actions {
+    transform: scale(1);
+}
+
+.complete-btn {
+    background: var(--akif-green) !important;
+}
+
+.delete-btn {
+    background: var(--passion-red) !important;
+}
+
+.restore-btn {
+    background: var(--akif-green) !important;
+}
+
+.permanent-delete-btn {
+    background: var(--passion-red) !important;
+}
+
+.note-item button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    min-width: 70px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.note-item button:hover {
+    transform: scale(1.1);
+}
+
+/* Geri Dönüşüm Modal */
+.recycle-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.recycle-modal h2 {
+    color: var(--passion-red);
+    margin-bottom: 1.5rem;
+}
+
+/* Animasyonlar */
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
