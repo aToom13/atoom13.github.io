@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎃Ela ❤️ Akif🎃</title>
+    <title>🎃Ela❤️Akif🎃</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+    <!-- Aşk Kapısı -->
+    <div id="loveGate" class="love-gate">
+        <div class="gate-content">
+            <h2>❤️ Sadece Tek Kişi İçin ❤️</h2>
+            <p2>Aşkımm hadi şifremizi gir:</p2>
+            <input type="text" id="secretCode" placeholder="Sen benim neyim oluyorsunn?" onkeypress="if(event.key === 'Enter') checkLove()"/>
+            <button onclick="checkLove()">Tabikii</button>
+            <p class="hint">İpucu: 🎃</p>
+        </div>
+    </div>
+
+    <!-- Ana İçerik -->
     <div class="love-container">
+        <div id="greeting"></div>
         <div class="love-header">
             <h1>Ela ❤️ Akif</h1>
             <div id="loveTimer"></div>
         </div>
         
         <div class="interaction-buttons">
-            <button onclick="window.location.href='Harita/map.html'" class="map-btn">
-                🗺️ Aşkımızın Haritası
-            </button>
-            
-            <button onclick="window.location.href='Galeri/gallery.html'" class="gallery-btn">
-                📸 Altın Anılarımız
-            </button>
+          <button onclick="window.location.href='Harita/map.html'" class="map-btn">
+            🗺️ Aşkımızın Haritası
+          </button>
+        
+          <button onclick="window.location.href='Galeri/gallery.html'" class="gallery-btn">
+            📸 Altın Anılarımız
+          </button>
+        
+          <button onclick="window.location.href='Notes/notes.html'" class="notes-btn">
+            📝 Aşk Notlarımız
+          </button>
         </div>
 
         <div class="music-player">
