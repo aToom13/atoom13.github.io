@@ -11,24 +11,9 @@ if (notes.length === 0) {
         { text: 'Bu yolda bana eşlik eder misinn', date: new Date().toLocaleString('tr-TR'), completed: true },
 						
         { text: 'Sevdam', date: new Date().toLocaleString('tr-TR'), completed: false },
-						
-        { text: 'Senin adınla titrer dilim,
-		 Bir yangın gibi düşersin içime.
-		 Gözlerin kahverengi bir deniz,
-		 Boğulmak isterim her bir biçime.
-		 ', date: new Date().toLocaleString('tr-TR'), completed: true },
-						
-	{ text: 'Saçların geceyi kıskandırır,
-		 En karanlıklar bile ışıldar sende.
-		 Bir rüzgâr esse, tenin kokar, 
-		 Çiçekler bile soluk kalır bu tende.
-		 ', date: new Date().toLocaleString('tr-TR'), completed: true },
-						
-	{ text: 'Ellerin değse, zaman durur, 
- 	 	 Dünya susar, kalpler konuşur. 
-		 Sen varsan bahar hiç bitmez, 
- 		 Ömrüm seninle huzur dinmez.
-		 ', date: new Date().toLocaleString('tr-TR'), completed: true }
+        { text: 'Senin adınla titrer dilim, Bir yangın gibi düşersin içime. Gözlerin kahverengi bir deniz, Boğulmak isterim her bir biçime.', date: new Date().toLocaleString('tr-TR'), completed: true },
+	{ text: 'Saçların geceyi kıskandırır, En karanlıklar bile ışıldar sende. Bir rüzgâr esse, tenin kokar,  Çiçekler bile soluk kalır bu tende. ', date: new Date().toLocaleString('tr-TR'), completed: true },					
+	{ text: 'Ellerin değse, zaman durur,  Dünya susar, kalpler konuşur.  Sen varsan bahar hiç bitmez,  Ömrüm seninle huzur dinmez. ', date: new Date().toLocaleString('tr-TR'), completed: true }
 
     );
     saveNotes();
