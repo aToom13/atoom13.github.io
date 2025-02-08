@@ -22,7 +22,7 @@ const specialLocations = [
     title: "O An",
     coords: [39.991119, 32.622279],
     description: "Hangi an bilmiyorum ama 4 yıl boyunca başıma gelen en iyi şeysin (Aslında biliyorum her an ❤️) 💘",
-    icon: 'star'
+    icon: 'heart'
     },
   {
     title: "Önemli Bir Yer",
