@@ -1,6 +1,6 @@
 /* Ana Tema */
 :root {
-  --gradient-bg: linear-gradient(45deg, #ff6b6b, #ff9ff3);
+  --gradient-bg: linear-gradient(300deg, #ff6b6b, #ff9ff3);
   --box-bg: rgba(255, 255, 255, 0.1);
   --text-color: #2d3436;
   --hover-effect: all 0.3s ease;
