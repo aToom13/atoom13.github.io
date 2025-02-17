@@ -114,7 +114,7 @@ function startHeartRain() {
     document.body.appendChild(heart);
 
     setTimeout(() => heart.remove(), 5000);
-  }, 500);
+  }, 200);
 }
 
 // Selamlama Mesajı
